@@ -1,0 +1,17 @@
+{
+  "name": "tangelo-automation-framework",
+  "version": "1.0.0",
+  "description": "Tangelo Framework",
+  "main": "index.js",
+  "scripts": {
+    "triggerAllTests-chrome": "npx cypress run --browser chrome",
+    "triggerLoginTest-chrome": "npx cypress run --spec 'cypress/e2e/Tangelo/login.cy.js' --browser chrome"
+  },
+  "author": "Adeel Sarwar",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.2.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-xpath": "^2.0.0"
+  }
+}
