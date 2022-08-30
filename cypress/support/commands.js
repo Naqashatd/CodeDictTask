@@ -23,6 +23,8 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+
 Cypress.Commands.add("getBySel", (selector, ...args) => {
 
     return cy.get(`[data-cy=${selector}]`, ...args);
@@ -34,3 +36,10 @@ Cypress.Commands.add("getBySel", (selector, ...args) => {
         return false
         });
 import 'cypress-file-upload';
+import 'cypress-iframe';
+Cypress.Commands.add('iframeCustom', { prevSubject: 'element' }, ($iframe) => {
+    return new Cypress.Promise((resolve) => {
+      $iframe.ready(function () {
+        resolve($iframe.contents().find('body'));
+    });
+  }) })

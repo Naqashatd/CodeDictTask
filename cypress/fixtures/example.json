@@ -1,12 +1,17 @@
 {
-    "priceBefore1": "50",
-    "discount1" : "10",
-    "priceAfter1" : "40",
-    "youSaved1": "10",
-    "priceBefore2": "100",
-    "discount2" : "20",
-    "priceAfter2" : "80",
-    "youSaved2": "20"
+    "name": "Jhone Doe",
+    "businessName" : "Test",
+    "streetAddress" : "Arcadia Stret",
+    "suitNo": "10",
+    "city": "Los Angeles",
+    "zipCode" : "10010",
+    "requesterName": "Jhon",
+    "requesterAddress":"Test",
+    "accountNumber":"2726262626262",
+    "employeeid": "232",
+    "SSN": "897654321",
+    "EIN": "856653865"
+
 
     
   }
